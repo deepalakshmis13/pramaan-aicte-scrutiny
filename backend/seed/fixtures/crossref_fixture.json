@@ -1,0 +1,27 @@
+{
+  "_comment": "DEMO FIXTURE used only when CROSSREF_MODE=simulated. Results produced from this file are always labelled 'Simulated' and are never shown as Verified.",
+  "10.1038/nature14539": {
+    "title": ["Deep learning"],
+    "container-title": ["Nature"],
+    "issued": {"date-parts": [[2015, 5, 27]]},
+    "author": [{"given": "Yann", "family": "LeCun"}, {"given": "Yoshua", "family": "Bengio"}, {"given": "Geoffrey", "family": "Hinton"}]
+  },
+  "10.1109/cvpr.2016.90": {
+    "title": ["Deep Residual Learning for Image Recognition"],
+    "container-title": ["2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"],
+    "issued": {"date-parts": [[2016, 6]]},
+    "author": [{"given": "Kaiming", "family": "He"}, {"given": "Xiangyu", "family": "Zhang"}, {"given": "Shaoqing", "family": "Ren"}, {"given": "Jian", "family": "Sun"}]
+  },
+  "10.1109/5.726791": {
+    "title": ["Gradient-based learning applied to document recognition"],
+    "container-title": ["Proceedings of the IEEE"],
+    "issued": {"date-parts": [[1998]]},
+    "author": [{"given": "Y.", "family": "Lecun"}, {"given": "L.", "family": "Bottou"}, {"given": "Y.", "family": "Bengio"}, {"given": "P.", "family": "Haffner"}]
+  },
+  "10.1145/3065386": {
+    "title": ["ImageNet classification with deep convolutional neural networks"],
+    "container-title": ["Communications of the ACM"],
+    "issued": {"date-parts": [[2017, 5, 24]]},
+    "author": [{"given": "Alex", "family": "Krizhevsky"}, {"given": "Ilya", "family": "Sutskever"}, {"given": "Geoffrey E.", "family": "Hinton"}]
+  }
+}

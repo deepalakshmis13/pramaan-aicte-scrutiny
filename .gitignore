@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/.env
+storage/
+storage-e2e/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+*.log
+
+# Python virtual environments
+backend/.venv/
+.venv/
+venv/
+
+# Environment secrets
+.env
+.env.*
+!backend/.env.example
+
+# Database backups
+*.dump
+*.sql
+*.backup
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

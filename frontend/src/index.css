@@ -1,0 +1,75 @@
+@import '@fontsource/public-sans/400.css';
+@import '@fontsource/public-sans/500.css';
+@import '@fontsource/public-sans/600.css';
+@import '@fontsource/public-sans/700.css';
+@import '@fontsource/source-serif-4/400.css';
+@import '@fontsource/source-serif-4/600.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* chrome */
+  --ink: 12 27 51;
+  --ink-2: 20 40 74;
+  --ink-3: 33 58 99;
+  /* content */
+  --paper: 242 243 239;
+  --surface: 255 255 255;
+  --sunk: 233 235 230;
+  --line: 217 221 216;
+  --line-strong: 185 191 186;
+  --text: 19 32 58;
+  --text-muted: 85 96 115;
+  --text-faint: 125 134 150;
+  --text-inverse: 238 241 246;
+  --link: 36 83 184;
+  /* result semantics */
+  --ok: 14 117 100;
+  --ok-soft: 225 241 236;
+  --warn: 165 101 12;
+  --warn-soft: 248 236 214;
+  --bad: 179 38 30;
+  --bad-soft: 248 227 224;
+  --sim: 90 95 149;
+  --sim-soft: 232 232 243;
+  --idle: 100 112 127;
+  --idle-soft: 231 233 236;
+  color-scheme: light;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-paper text-text font-sans antialiased;
+    font-size: 14px;
+    line-height: 1.5;
+    font-feature-settings: 'tnum' 1, 'cv11' 1;
+  }
+  h1, h2, h3 { @apply text-text; letter-spacing: -0.01em; }
+  :focus-visible { outline: 2px solid rgb(var(--link)); outline-offset: 2px; border-radius: 3px; }
+  ::selection { background: #c9d8f5; }
+  .grid > * { min-width: 0; }
+}
+
+@layer components {
+  .tbl { @apply w-full border-collapse text-[13px]; }
+  .tbl th { @apply text-left font-semibold text-text-muted text-xs py-2 px-3 border-b border-line bg-sunk/60 whitespace-nowrap; }
+  .tbl td { @apply py-2.5 px-3 border-b border-line align-top; }
+  .tbl tbody tr:hover td { background: #f7f8f5; }
+  .tbl tr.row-link { cursor: pointer; }
+  .panel { @apply bg-surface border border-line rounded-md; }
+  .panel-h { @apply flex items-center justify-between gap-3 px-4 py-2.5 border-b border-line; }
+  .panel-t { @apply text-[13px] font-semibold text-text; }
+  .field-label { @apply block text-xs font-semibold text-text-muted mb-1; }
+  .input { @apply w-full rounded border border-line-strong bg-surface px-2.5 py-1.5 text-[13px] text-text placeholder:text-text-faint focus:border-link focus:outline-none focus:ring-2 focus:ring-link/20 disabled:bg-sunk; }
+  .kbd { @apply font-mono text-[11px] px-1 rounded border border-line bg-sunk; }
+  .hatch { background-image: repeating-linear-gradient(135deg, currentColor 0 1.5px, transparent 1.5px 4px); }
+  .doc-paper { font-family: 'Source Serif 4', Georgia, serif; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
