@@ -6,6 +6,8 @@ The goal is to make application scrutiny more **structured, explainable, traceab
 
 > **Prototype disclaimer:** PRAMAAN is an independent demonstration project. All institutions, people, applications, and documents are synthetic. It is not affiliated with or connected to AICTE systems. External integrations may be live, simulated, unavailable, or placeholders, as described below. Automated checks provide decision support only; they do not approve or reject applications.
 
+Demo video link : https://drive.google.com/file/d/1ZZZPcfWny5zak-raz_SN01PKe6SlECPe/view?usp=sharing
+
 ## Project at a glance
 
 | | |
